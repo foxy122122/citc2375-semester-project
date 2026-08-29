@@ -1,0 +1,77 @@
+Instructions
+Semester Project Checkpoint 2: Semantic HTML and Project Pages
+
+Apply this week's HTML material by turning the placeholder into a meaningful multi-page project shell. Do not focus on visual design yet; concentrate on structure and content.
+Use VS Code for the project workflow
+
+Complete this checkpoint with your semester-project folder open in Visual Studio Code. Use the Explorer view to create, rename, and edit project files. Use the Source Control view (Ctrl+Shift+G) for Git and GitHub actions. Use the VS Code integrated terminal only for development commands specifically shown in the instructions, such as npm install, npm run dev, or npm run build.
+
+    Open VS Code and choose File > Open Folder.... Open your existing citc2375-semester-project folder.
+    Open the Source Control view by clicking the branching icon in the Activity Bar or pressing Ctrl+Shift+G.
+    Before editing, select the ... (More Actions) menu in Source Control and choose Pull. This checks GitHub for a newer version of your main branch before you begin.
+    When Pull finishes, switch back to the Explorer view (Ctrl+Shift+E) and complete the technical work below.
+
+Step-by-step requirements
+
+    In client/index.html, keep the HTML boilerplate and add semantic header, nav, main, and footer elements.
+
+    Inside the navigation, add working links to index.html and a new about.html page.
+
+    Create client/about.html using the same HTML boilerplate and the same navigation.
+     Explain what problem the application addresses, who might use it, and what type 
+     of collection it manages.
+
+    On index.html, create a section that introduces the collection.
+     Hard-code at least 3 sample items. Use an article element for each item.
+
+    Each sample item must include a heading, category/type, description,
+     and at least one project-specific piece of information.
+
+    Add at least one relevant image somewhere in the project.
+     Give every meaningful image accurate alt text. If an image is purely decorative,
+      use an empty alt="".
+
+    Use at least one external link where it makes sense for your topic.
+     Set the link text so its purpose is understandable without seeing the URL.
+
+    Make sure the title element is descriptive on both pages.
+
+    Update README.md with a section named ## Planned Data Model.
+     List the fields you expect every collection item to have
+      later in the semester.
+
+    Open client/index.html locally in a browser and
+     click every navigation link. Correct broken links before committing.
+
+
+Finish the checkpoint in VS Code: review, commit, push, deploy, and submit
+
+    In VS Code, choose File > Save All so every changed file is saved.
+    Open the Source Control view (Ctrl+Shift+G). Files you changed should appear under Changes.
+    Review the changes before committing. Click a file under Changes to open VS Code's diff view. Make sure you did not accidentally add passwords, access tokens, .env secrets, or unrelated files.
+    Stage the checkpoint by clicking the + button next to the Changes heading. The files should move to Staged Changes.
+    In the Source Control message box, type this commit message exactly: Project checkpoint 2: semantic HTML and project pages.
+    Click Commit. If VS Code asks whether you want to save files before committing, choose Save All & Commit.
+    Push the commit to GitHub from VS Code. Click Sync Changes in the Source Control view or the circular-arrows sync control in the Status Bar. If VS Code instead shows Publish Branch, click it and publish main to the existing GitHub repository. Complete the GitHub sign-in prompt if it appears.
+    Wait for the sync operation to finish. The Source Control view should no longer show an outgoing commit for the checkpoint.
+    Open your GitHub repository in a browser and refresh it. Verify that the latest commit message is Project checkpoint 2: semantic HTML and project pages and that the changed files appear on the main branch.
+    On GitHub, click the latest commit message above the file list. Copy the short commit identifier shown for that commit. You will place this value in the Brightspace submission file.
+    Open Render, select your frontend Static Site, and watch the newest automatic deployment. Render should start a deploy after the GitHub push. Wait until it shows Live.
+    Open the public onrender.com URL in a new browser tab and test every feature required by this checkpoint.
+    In VS Code, choose File > New Text File. Enter the information below, then choose File > Save As... and save it as checkpoint-02.txt outside the GitHub repository folder (for example, in a CITC 2375 submissions folder in Documents). Saving it outside the repository prevents the submission file from becoming an uncommitted Git change.
+
+    Name: YOUR NAME
+    Project title: YOUR PROJECT TITLE
+    GitHub repository: https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    Live frontend: https://YOUR-SITE.onrender.com
+    Commit: SHORT-COMMIT-ID
+    Checkpoint notes: one or two sentences describing what you changed this week.
+
+    Upload checkpoint-02.txt to this Brightspace assignment. Your code remains in GitHub; the text file records the exact deployed version to grade.
+
+Grading (10 points)
+
+    6 points: the technical requirements for this checkpoint are present and working.
+    2 points: the checkpoint is committed and pushed to the GitHub repository.
+    1 point: the Render deployment is live and matches the submitted commit.
+    1 point: the D2L submission file contains working links and the commit ID.
