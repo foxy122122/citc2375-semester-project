@@ -9,6 +9,21 @@
 
 ## Planned Data Model
 
-idk
+`game_title`
+`game_image`
+`genre`
+`description`
+`steam_link`
 
-video?
+
+mabye video later
+
+
+
+## Project Progress
+
+week 1: boiler plate
+
+week 2: basic starting stuff
+
+week 3:***style***
