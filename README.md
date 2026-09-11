@@ -15,10 +15,7 @@
 `description`
 `steam_link`
 
-
 mabye video later
-
-
 
 ## Project Progress
 
@@ -27,3 +24,5 @@ week 1: boiler plate
 week 2: basic starting stuff
 
 week 3:***style***
+
+week 4:**even more *style*. and made the code more readable**

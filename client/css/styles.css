@@ -1,20 +1,28 @@
+:root {
+    --main-bg-color: #1a1a1a;
+    --main-text-color: white;
+    --link-color: lightblue;
+    --link-alt-color: blue;
+    --nav-link-border-color: black;
+    --sub-bg-color: #333;
+    --sub-border-color: #555;
+}
 *{
     font-family: sans-serif;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: #1a1a1a;
-    color:white;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
     line-height: 1.5;
     list-style-type: none;
-    max-width: 900px;
 }
 
 a:link,a:visited {
-    color: lightblue;
+    color: var(--link-color);
 }
 a:hover,a:active {
-    color: blue;
+    color: var(--link-alt-color);
 }
 .nav-link {
     width: 49%;
@@ -23,18 +31,31 @@ a:hover,a:active {
     border: 2px solid black;
 }
 .genre{
-    background-color: #333;
-    border: 1px solid #555;
+    background-color: var(--sub-bg-color);
+    border: 1px solid var(--sub-border-color);
     padding: 5px;
 }
 img {
-    border: 1px solid #555;
+    border: 1px solid var(--sub-border-color);
     padding: 5px;
     max-width: 100%;
-    background-color: #333;
-    max-height: auto;
+    background-color: var(--sub-bg-color);
+    height: auto;
+    width: 700px;
+}
+.games {
+    border: 1px solid var(--sub-border-color);
+    padding: 5px;
+    margin: 5px;
+    max-width: 720px;
+    /*height: 820px;*/
+}/* wanted to make the flex boxes the same height but did not want the
+steam link to be floating above nothing
+i could not figure out how to make the steam link stay at the bottom
+.steamlink {
+    
 }
 .limbus {
-    /* wana make a gradient but couldnt figure it out
-background: radial-gradient(square,rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 100%);*/
-}
+    wana make a gradient but couldnt figure it out
+background: radial-gradient(square,rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 100%);
+}*/
