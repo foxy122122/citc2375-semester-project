@@ -1,26 +1,26 @@
-Create client/add.html. Add the same header, navigation, stylesheet link, and footer used by the other pages.
+-Create client/add.html. Add the same header, navigation, stylesheet link, and footer used by the other pages.
 
-Add an Add Item (or equivalent project-specific) form. The form must contain fields matching at least four properties 
+-Add an Add Item (or equivalent project-specific) form. The form must contain fields matching at least four properties 
 from your planned data model.
 
-Give every form control a visible label associated with the input using matching for and id values.
+-Give every form control a visible label associated with the input using matching for and id values.
 
-Use appropriate input types such as text, number, date, url, email, select boxes, or textareas as appropriate.
+-Use appropriate input types such as text, number, date, url, email, select boxes, or textareas as appropriate.
 
-Use built-in validation attributes where appropriate: required, min, max, minlength, or maxlength.
+-Use built-in validation attributes where appropriate: required, min, max, minlength, or maxlength.
 
-Add a submit button. The form does not need to save data yet. Set action="#" so it remains on the page during this checkpoint.
+-Add a submit button. The form does not need to save data yet. Set action="#" so it remains on the page during this checkpoint.
 
-Add an Add link to the navigation on every page so the new page can be reached from anywhere in the project.
+-Add an Add link to the navigation on every page so the new page can be reached from anywhere in the project.
 
-On about.html, add a small table that communicates useful project information. Examples: sample categories and counts,
+-On about.html, add a small table that communicates useful project information. Examples: sample categories and counts,
  rating scale meanings, feature comparison, or planned data fields.
 
 Give the table a caption. Use table headings (th) for column/row labels and use scope="col" or scope="row" as appropriate.
 
-Style the form in styles.css. Inputs should be readable, have visible focus states, and use reasonable spacing. Style the
+-Style the form in styles.css. Inputs should be readable, have visible focus states, and use reasonable spacing. Style the
  table so headers and cells are easy to distinguish.
 
-Test browser validation by attempting to submit the form with required fields empty.
+-Test browser validation by attempting to submit the form with required fields empty.
 
 Update README.md with the Week 5 form and table work.

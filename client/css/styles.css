@@ -28,7 +28,7 @@ a:hover,a:active {
     width: 49%;
     text-align: center;
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 .genre{
     background-color: var(--sub-bg-color);

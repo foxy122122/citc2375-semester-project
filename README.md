@@ -26,3 +26,5 @@ week 2: basic starting stuff
 week 3:***style***
 
 week 4:**even more *style*. and made the code more readable**
+
+week 5: new page for adding. currently does not add. change the color of the naviagtion. added planned features using tables in about
