@@ -1,15 +1,26 @@
-Inside client/css, create styles.css.
-Link that stylesheet from the head of every HTML page:
+Create client/add.html. Add the same header, navigation, stylesheet link, and footer used by the other pages.
 
-<link rel="stylesheet" href="css/styles.css">
+Add an Add Item (or equivalent project-specific) form. The form must contain fields matching at least four properties 
+from your planned data model.
 
-If a page is later moved into a subfolder, adjust the relative path rather than copying the stylesheet.
-In styles.css, set a readable font family, default text color, background color, and line height on body.
-Create a consistent site layout across all pages. Use the same site header and footer on every page, including the same site name/branding and navigation. Keep each page's page-specific h1 inside main. Create a reusable content-width class, such as .content-width, for the content inside the header and footer, and give it the same maximum width, horizontal auto margins, and padding used for main. The header and footer backgrounds may span the full browser width, but their content should align with the main page content.
-Style h1, h2, and paragraph text so the hierarchy is obvious.
-Create reusable classes for your collection items, such as .item-card, and apply the class to each of the 3 sample article elements.
-Use the box model intentionally: add padding inside cards, visible spacing between cards, a border or other boundary, and an appropriate border radius if desired.
-Style navigation links. Include an obvious hover/focus state so keyboard and mouse users can tell which link is active.
-Style images so they do not overflow their container. A common starting point is max-width: 100% and height: auto.
-Open both pages in the browser and make sure they share a consistent appearance.
-Update README.md under ## Project Progress with a Week 3 entry describing the CSS foundation.
+Give every form control a visible label associated with the input using matching for and id values.
+
+Use appropriate input types such as text, number, date, url, email, select boxes, or textareas as appropriate.
+
+Use built-in validation attributes where appropriate: required, min, max, minlength, or maxlength.
+
+Add a submit button. The form does not need to save data yet. Set action="#" so it remains on the page during this checkpoint.
+
+Add an Add link to the navigation on every page so the new page can be reached from anywhere in the project.
+
+On about.html, add a small table that communicates useful project information. Examples: sample categories and counts,
+ rating scale meanings, feature comparison, or planned data fields.
+
+Give the table a caption. Use table headings (th) for column/row labels and use scope="col" or scope="row" as appropriate.
+
+Style the form in styles.css. Inputs should be readable, have visible focus states, and use reasonable spacing. Style the
+ table so headers and cells are easy to distinguish.
+
+Test browser validation by attempting to submit the form with required fields empty.
+
+Update README.md with the Week 5 form and table work.
