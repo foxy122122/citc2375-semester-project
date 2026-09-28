@@ -1,26 +1,21 @@
--Create client/add.html. Add the same header, navigation, stylesheet link, and footer used by the other pages.
+-Create client/js/app.js.
 
--Add an Add Item (or equivalent project-specific) form. The form must contain fields matching at least four properties 
-from your planned data model.
+-Link it near the end of the body of index.html using <script src="js/app.js"></script>.
 
--Give every form control a visible label associated with the input using matching for and id values.
+-In app.js, create meaningful const variables for your project: project title, number of current sample items, a numeric value such as a rating/price/duration,
+ and at least one boolean.
 
--Use appropriate input types such as text, number, date, url, email, select boxes, or textareas as appropriate.
+-Create at least one numeric calculation using arithmetic operators. The calculation must make sense for your topic (average, total, remaining amount, percentage,
+ score, etc.).
 
--Use built-in validation attributes where appropriate: required, min, max, minlength, or maxlength.
+Create at least one string using a template literal so project data is inserted into a sentence.
 
--Add a submit button. The form does not need to save data yet. Set action="#" so it remains on the page during this checkpoint.
+-Create an if/else decision based on project data. Example: display a different console message when the number of sample items is at least 3.
 
--Add an Add link to the navigation on every page so the new page can be reached from anywhere in the project.
+-Use console.log to display the project summary, the calculation result, and the conditional result.
 
--On about.html, add a small table that communicates useful project information. Examples: sample categories and counts,
- rating scale meanings, feature comparison, or planned data fields.
+Open the deployed or local site, press F12, open the Console, and verify that your messages appear without JavaScript errors.
 
-Give the table a caption. Use table headings (th) for column/row labels and use scope="col" or scope="row" as appropriate.
+-Do not use DOM APIs such as document.querySelector in this checkpoint. Those will be introduced later.
 
--Style the form in styles.css. Inputs should be readable, have visible focus states, and use reasonable spacing. Style the
- table so headers and cells are easy to distinguish.
-
--Test browser validation by attempting to submit the form with required fields empty.
-
-Update README.md with the Week 5 form and table work.
+-Update README.md with a Week 6 entry describing the JavaScript prototype.
