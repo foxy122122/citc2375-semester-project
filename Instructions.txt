@@ -1,21 +1,196 @@
--Create client/js/app.js.
+Complete the exam project with the repository open in Visual Studio Code. Use VS Code's Explorer for files and its Source Control view (Ctrl+Shift+G) to stage, commit, and push. The exam does not require command-line Git commands.
+Required final structure
 
--Link it near the end of the body of index.html using <script src="js/app.js"></script>.
+    Verify that the repository contains the static frontend under client.
+    Your deployed site must contain at least three connected pages: index.html, about.html, and add.html (or clearly equivalent project-specific names approved by the instructor).
+    Every page must have a consistent navigation menu and a working link back to the home page.
+    The home page must introduce the project and display at least three meaningful sample collection items.
+    The About page must explain the project's purpose and include the accessible table created in Week 5.
+    The Add page must contain the accessible project-specific form from Week 5. The form does not have to save data yet.
 
--In app.js, create meaningful const variables for your project: project title, number of current sample items, a numeric value such as a rating/price/duration,
- and at least one boolean.
+HTML and accessibility requirements
 
--Create at least one numeric calculation using arithmetic operators. The calculation must make sense for your topic (average, total, remaining amount, percentage,
- score, etc.).
+    Use semantic structural elements where appropriate: header, nav, main, section/article, and footer.
+    Use headings in a logical hierarchy.
+    Every meaningful image must have accurate alternative text.
+    Every form control must have a visible associated label.
+    The table must have a caption and proper header cells.
+    Test every link and form control using the deployed Render version.
 
-Create at least one string using a template literal so project data is inserted into a sentence.
+CSS requirements
 
--Create an if/else decision based on project data. Example: display a different console message when the number of sample items is at least 3.
+    Use one shared external stylesheet rather than duplicating page-specific style blocks.
+    Use CSS custom properties for a consistent color palette.
+    Use the box model intentionally for spacing and card boundaries.
+    Use Flexbox for at least one meaningful layout, such as navigation or the collection cards.
+    The site must remain usable when the browser is resized to a narrow width.
+    Interactive elements must have visible hover and focus styling.
 
--Use console.log to display the project summary, the calculation result, and the conditional result.
+JavaScript Fundamentals I requirement
 
-Open the deployed or local site, press F12, open the Console, and verify that your messages appear without JavaScript errors.
+    The project must link an external JavaScript file.
+    The file must contain meaningful project variables, a numeric calculation, a template literal, a boolean/comparison, and an if/else decision.
+    Open the browser console on the deployed site and confirm that the project summary runs without errors.
 
--Do not use DOM APIs such as document.querySelector in this checkpoint. Those will be introduced later.
+GitHub and Render requirements
 
--Update README.md with a Week 6 entry describing the JavaScript prototype.
+    Use the VS Code Source Control view to commit all exam corrections and synchronize them to the existing GitHub repository.
+    Your repository must show a sequence of meaningful commits from the weekly checkpoints rather than one last-minute upload.
+    Update README.md with sections named Project Description, Current Features, Planned Data Model, and Live Site.
+    Under Live Site, place the Render frontend URL.
+    Open Render and wait until the latest deployment is Live.
+    Test the public Render URL in a private/incognito browser window to make sure the site does not depend on local files.
+
+Project demonstration
+
+The project demonstration is a required part of Exam 1 and is worth 25 points.
+
+The purpose of the demonstration is to show that you can explain and demonstrate the project you created. This is a technical walkthrough, not a formal speech or professionally edited presentation.
+
+Create a short demonstration that shows your deployed website, demonstrates its current functionality, and highlights selected portions of your code.
+
+Choose one of the following formats.
+Option A: Video demonstration
+
+Create a screen recording approximately 4–6 minutes long. Show your deployed website and relevant portions of your project in Visual Studio Code.
+
+Explain the project through narration or clear on-screen annotations. You do not need to appear on camera, use a webcam, or professionally edit the recording.
+
+Video hosting and submission:
+
+    Upload your completed recording to a video-hosting service such as YouTube or Vimeo.
+    Your video may be unlisted. An unlisted YouTube video does not appear in public searches but can be viewed by anyone who has its link. You do not need to make your video public.
+    Do not set your video to Private or use permissions that require the instructor to request access. The instructor must be able to view your recording directly using the link you provide.
+    Copy the video's direct viewing URL and include it in your EXAM1_SUBMISSION.txt file.
+    Paste the same URL into the Comments field when uploading your project ZIP to this Brightspace assignment.
+    Before submitting, open the video link in a private/incognito browser window to verify that it plays without requiring the viewer to sign in or request permission.
+
+Do not upload the video file itself to Brightspace or include it in your project ZIP. Submit the video link as described above.
+Option B: Document or slideshow
+
+Create a short Word document, PowerPoint presentation, or PDF containing screenshots of your deployed website and selected code snippets.
+
+A reasonable length is approximately 2–4 document pages or 4–6 presentation slides. Include short explanations, captions, or annotations with your screenshots.
+
+You do not need to write an essay or create a professionally designed presentation.
+
+Save your demonstration as Exam1_Demonstration_YourName using the appropriate file extension (.docx, .pptx, or .pdf). Include this file in your project ZIP.
+Both formats are graded using the same criteria. Choose the format that allows you to demonstrate your project most effectively.
+Required demonstration content
+
+Your demonstration must include all of the following areas.
+
+    Project overview and navigation
+        State the purpose of your project.
+        Show the deployed home page.
+        Show at least three sample collection items.
+        Demonstrate navigation between the Home, About, and Add pages.
+    HTML and accessibility
+        Show the table on the About page.
+        Show the form on the Add page.
+        Highlight at least one accessibility feature in your code, such as an associated form label, meaningful image alternative text, table headers, or a table caption.
+    CSS and responsive design
+        Show an example of your CSS.
+        Identify either your CSS custom properties or a meaningful use of Flexbox.
+        Resize the browser to demonstrate that the site remains usable at a narrow width.
+    JavaScript functionality
+        Show the external JavaScript file.
+        Identify meaningful variables used by the project.
+        Show the numeric calculation.
+        Show the template literal.
+        Show the boolean/comparison and if/else decision.
+        Show the browser console on the deployed site and confirm that the project summary executes without errors.
+    GitHub and deployment
+        Show the GitHub repository.
+        Show evidence of your commit history.
+        Provide the public Render URL.
+        Demonstrate that the deployed website loads successfully from the public URL.
+
+Demonstration grading guidelines
+
+The demonstration is graded on the completeness and clarity of the technical evidence you provide. It is not graded on video editing, public speaking ability, graphic design, or presentation software skills.
+
+The demonstration provides evidence of your work, but it does not replace the project itself. The instructor will also inspect the submitted files, GitHub repository, and deployed site when evaluating the technical requirements.
+Rubric (100 points)
+
+    15 points — HTML structure, navigation, and content: semantic HTML, working navigation, meaningful content, and the required three-page structure.
+    10 points — Accessibility: accessible form markup, table markup, alternative text, labels, headings, and related accessibility requirements.
+    20 points — CSS and responsive design: external CSS, visual consistency, CSS custom properties, Flexbox, spacing, box model usage, interactive states, and narrow-screen usability.
+    10 points — JavaScript Fundamentals I: required JavaScript concepts are implemented meaningfully and execute correctly with no console errors.
+    10 points — GitHub and project documentation: repository organization, meaningful commit history, and required README.md documentation.
+    10 points — Render deployment: deployment is current, publicly reachable, and contains no broken links or missing assets.
+    25 points — Project demonstration: the demonstration clearly and accurately presents the required project functionality and technical evidence.
+
+Project demonstration rubric — 25 points
+
+    5 points — Project overview and navigation: clearly explains the project's purpose and demonstrates the deployed pages, navigation, and sample collection items.
+    5 points — HTML and accessibility evidence: demonstrates the table and form and identifies relevant accessibility features in the code.
+    5 points — CSS and responsive design evidence: identifies meaningful CSS features and demonstrates narrow-screen usability.
+    5 points — JavaScript explanation: identifies and explains the required JavaScript concepts and shows successful console output.
+    5 points — GitHub, deployment, and overall completeness: shows the repository, commit history, public deployment, and provides a complete and understandable technical walkthrough.
+
+Submission
+Part A: Finalize the project
+
+    In VS Code, update README.md and complete all final exam corrections. Choose File > Save All.
+    Open Source Control (Ctrl+Shift+G). Review the changed files by clicking them, then click the + beside Changes to stage all exam changes.
+    Enter Submit Exam 1 project milestone in the Source Control message box and click Commit.
+    Click Sync Changes to push the final Exam 1 commit to GitHub. Complete GitHub authentication if VS Code asks.
+    Open the repository on GitHub, refresh the page, and verify that the latest commit is Submit Exam 1 project milestone.
+    Click that latest commit on GitHub and copy its short commit identifier.
+    Open Render, wait until the latest deployment is Live, and test the public Render URL in a private/incognito browser window.
+
+Part B: Prepare the submission files
+
+    Complete your project demonstration.
+        Video: Upload your recording to YouTube or another video-hosting service, set the visibility to Unlisted or Public, and copy its direct viewing URL.
+        Document/slideshow: Save your completed Word document, PowerPoint presentation, or PDF.
+    At the repository root in VS Code, create EXAM1_SUBMISSION.txt containing:
+        Your name
+        GitHub repository URL
+        Render frontend URL
+        The short identifier of your final Exam 1 commit
+        Demonstration format: Video or Document/Slideshow
+        If submitting a video: The direct URL to your hosted video
+    This file is documentation for the ZIP. Do not create another Git commit after this step.
+    If you created a document or slideshow, include the demonstration file in the ZIP when preparing your submission.
+    If you created a video, verify that its URL works in a private/incognito browser window. You do not need to include the video file in the ZIP.
+
+Part C: Upload to Brightspace
+
+    Close any running development server.
+    In Windows File Explorer, make a ZIP backup of the repository folder.
+    If you selected the document/slideshow demonstration option, include the completed demonstration file in the ZIP.
+    Name the archive Exam1_SemesterProject_YourName.zip.
+    Upload the ZIP file to this Brightspace assignment.
+    If you selected the video demonstration option: Paste the direct URL to your hosted video into the Comments field on the Brightspace assignment submission page. This must be the same URL included in EXAM1_SUBMISSION.txt.
+    Verify that your ZIP includes EXAM1_SUBMISSION.txt and that your instructor can access your demonstration.
+    Submit the assignment.
+
+Final submission checklist
+
+    My completed project is committed to GitHub.
+    My latest Render deployment is Live and works in a private/incognito browser window.
+    My ZIP contains my project and EXAM1_SUBMISSION.txt.
+    If I chose the document/slideshow option, my demonstration file is included in the ZIP.
+    If I chose the video option, my recording is hosted online, the direct viewing URL is in EXAM1_SUBMISSION.txt, and I have pasted that URL into the Brightspace submission Comments field.
+    I have verified that the instructor can access my submitted demonstration.
+
+Evaluation Criteria
+Grade Item: , Out of: 100 points
+Out of: 100 points
+Submission Details
+
+Submission type
+    File submission
+Files allowed per submission
+    Unlimited
+Allowed files
+    Custom File Types (.zip)
+Number of submissions
+    All submissions are kept
+
+My Work
+Drop files, or click to browse
+Comments
+Edit Comments
