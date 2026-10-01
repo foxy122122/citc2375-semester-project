@@ -41,6 +41,11 @@ GitHub and Render requirements
     Open Render and wait until the latest deployment is Live.
     Test the public Render URL in a private/incognito browser window to make sure the site does not depend on local files.
 
+will do these /\ but wont update the instructions after for there is no reason to 
+
+
+
+
 Project demonstration
 
 The project demonstration is a required part of Exam 1 and is worth 25 points.
@@ -49,24 +54,7 @@ The purpose of the demonstration is to show that you can explain and demonstrate
 
 Create a short demonstration that shows your deployed website, demonstrates its current functionality, and highlights selected portions of your code.
 
-Choose one of the following formats.
-Option A: Video demonstration
-
-Create a screen recording approximately 4–6 minutes long. Show your deployed website and relevant portions of your project in Visual Studio Code.
-
-Explain the project through narration or clear on-screen annotations. You do not need to appear on camera, use a webcam, or professionally edit the recording.
-
-Video hosting and submission:
-
-    Upload your completed recording to a video-hosting service such as YouTube or Vimeo.
-    Your video may be unlisted. An unlisted YouTube video does not appear in public searches but can be viewed by anyone who has its link. You do not need to make your video public.
-    Do not set your video to Private or use permissions that require the instructor to request access. The instructor must be able to view your recording directly using the link you provide.
-    Copy the video's direct viewing URL and include it in your EXAM1_SUBMISSION.txt file.
-    Paste the same URL into the Comments field when uploading your project ZIP to this Brightspace assignment.
-    Before submitting, open the video link in a private/incognito browser window to verify that it plays without requiring the viewer to sign in or request permission.
-
-Do not upload the video file itself to Brightspace or include it in your project ZIP. Submit the video link as described above.
-Option B: Document or slideshow
+ Document or slideshow
 
 Create a short Word document, PowerPoint presentation, or PDF containing screenshots of your deployed website and selected code snippets.
 
@@ -108,26 +96,7 @@ Your demonstration must include all of the following areas.
 
 Demonstration grading guidelines
 
-The demonstration is graded on the completeness and clarity of the technical evidence you provide. It is not graded on video editing, public speaking ability, graphic design, or presentation software skills.
 
-The demonstration provides evidence of your work, but it does not replace the project itself. The instructor will also inspect the submitted files, GitHub repository, and deployed site when evaluating the technical requirements.
-Rubric (100 points)
-
-    15 points — HTML structure, navigation, and content: semantic HTML, working navigation, meaningful content, and the required three-page structure.
-    10 points — Accessibility: accessible form markup, table markup, alternative text, labels, headings, and related accessibility requirements.
-    20 points — CSS and responsive design: external CSS, visual consistency, CSS custom properties, Flexbox, spacing, box model usage, interactive states, and narrow-screen usability.
-    10 points — JavaScript Fundamentals I: required JavaScript concepts are implemented meaningfully and execute correctly with no console errors.
-    10 points — GitHub and project documentation: repository organization, meaningful commit history, and required README.md documentation.
-    10 points — Render deployment: deployment is current, publicly reachable, and contains no broken links or missing assets.
-    25 points — Project demonstration: the demonstration clearly and accurately presents the required project functionality and technical evidence.
-
-Project demonstration rubric — 25 points
-
-    5 points — Project overview and navigation: clearly explains the project's purpose and demonstrates the deployed pages, navigation, and sample collection items.
-    5 points — HTML and accessibility evidence: demonstrates the table and form and identifies relevant accessibility features in the code.
-    5 points — CSS and responsive design evidence: identifies meaningful CSS features and demonstrates narrow-screen usability.
-    5 points — JavaScript explanation: identifies and explains the required JavaScript concepts and shows successful console output.
-    5 points — GitHub, deployment, and overall completeness: shows the repository, commit history, public deployment, and provides a complete and understandable technical walkthrough.
 
 Submission
 Part A: Finalize the project
@@ -175,22 +144,3 @@ Final submission checklist
     If I chose the document/slideshow option, my demonstration file is included in the ZIP.
     If I chose the video option, my recording is hosted online, the direct viewing URL is in EXAM1_SUBMISSION.txt, and I have pasted that URL into the Brightspace submission Comments field.
     I have verified that the instructor can access my submitted demonstration.
-
-Evaluation Criteria
-Grade Item: , Out of: 100 points
-Out of: 100 points
-Submission Details
-
-Submission type
-    File submission
-Files allowed per submission
-    Unlimited
-Allowed files
-    Custom File Types (.zip)
-Number of submissions
-    All submissions are kept
-
-My Work
-Drop files, or click to browse
-Comments
-Edit Comments

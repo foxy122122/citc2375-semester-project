@@ -10,22 +10,55 @@
 <body>
   <header>
 <!--title-->
-    <h1>Cool Game Collection about page</h1>
+    <h1>Cool Game Collection - Add Game Page</h1>
   </header>
 
   <nav style="display: flex; gap: 0;">
 <!--links-->
-    <p class="nav-link"><a href=".\index.html">index</a></p><p class="nav-link"><a href=".\about.html">about</a></p>
+    <p class="nav-link"><a href=".\index.html">index</a></p><p class="nav-link"><a href=".\about.html">about</a></p><p class="nav-link"><a href=".\add.html">add game</a></p>
   </nav>
   
   <main>
-    <p>This is my CITC 2375 semester project about page.</p><p> 
-         it's here to solve my problem of not finishing
-          the project yet and to talk about games i like.</p><p>   
-           I can only think of two people who would use this.</p><p>   
-           Me as a show of what I learned and my professor as proof I did what he needed me to do.
-    </p>
-<!--whats its about-->
+    <p>this is the page where you can add games to the collection</p>
+    <p>please fill out all fields</p>
+    <article style="display: flex; flex-direction: column; gap: 10px;">
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Game Information</legend>
+
+      <label for="title">title:</label>
+      <input type="text" name="title" id="title" required><br>
+      <p>title: the name of the game</p>
+
+      <label for="genre">genre:</label>
+      <input type="text" name="genre" id="genre" required><br>
+      <p>genre: the genre of the game</p>
+
+      <label for="description" maxlength="200">description:</label>
+      <textarea name="description" id="description" required></textarea><br>
+      <p>description: a short description of the game</p>
+      <p>(max 200 characters)</p>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>external links</legend>
+
+      <label for="image">image URL:</label>
+      <input type="url" name="image" id="image" required><br>
+      <p>image URL: a link to an image of the game</p>
+
+      <label for="steamlink">steam link:</label>
+      <input type="url" name="steamlink" id="steamlink" required><br>
+      <p>steam link: a link to the steam page of the game</p>
+      <p>if there is no steam link then,</p><p>try again later when i have suport for that</p>
+
+      </fieldset>
+      <p></p>
+
+      <input type="submit" value="Add Game">
+    </form>
+    </article>
   </main>
 
 </body>
