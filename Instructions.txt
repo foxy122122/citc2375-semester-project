@@ -1,43 +1,43 @@
 Complete the exam project with the repository open in Visual Studio Code. Use VS Code's Explorer for files and its Source Control view (Ctrl+Shift+G) to stage, commit, and push. The exam does not require command-line Git commands.
 Required final structure
 
-    Verify that the repository contains the static frontend under client.
-    Your deployed site must contain at least three connected pages: index.html, about.html, and add.html (or clearly equivalent project-specific names approved by the instructor).
-    Every page must have a consistent navigation menu and a working link back to the home page.
-    The home page must introduce the project and display at least three meaningful sample collection items.
-    The About page must explain the project's purpose and include the accessible table created in Week 5.
-    The Add page must contain the accessible project-specific form from Week 5. The form does not have to save data yet.
+    -Verify that the repository contains the static frontend under client.
+    -Your deployed site must contain at least three connected pages: index.html, about.html, and add.html (or clearly equivalent project-specific names approved by the instructor).
+    -Every page must have a consistent navigation menu and a working link back to the home page.
+    -The home page must introduce the project and display at least three meaningful sample collection items.
+    -The About page must explain the project's purpose and include the accessible table created in Week 5.
+    -The Add page must contain the accessible project-specific form from Week 5. The form does not have to save data yet.
 
 HTML and accessibility requirements
 
-    Use semantic structural elements where appropriate: header, nav, main, section/article, and footer.
-    Use headings in a logical hierarchy.
-    Every meaningful image must have accurate alternative text.
-    Every form control must have a visible associated label.
-    The table must have a caption and proper header cells.
-    Test every link and form control using the deployed Render version.
+    -Use semantic structural elements where appropriate: header, nav, main, section/article, and footer.
+    -Use headings in a logical hierarchy.
+    -Every meaningful image must have accurate alternative text.
+    -Every form control must have a visible associated label.
+    -The table must have a caption and proper header cells.
+    -Test every link and form control using the deployed Render version.
 
 CSS requirements
 
-    Use one shared external stylesheet rather than duplicating page-specific style blocks.
-    Use CSS custom properties for a consistent color palette.
-    Use the box model intentionally for spacing and card boundaries.
-    Use Flexbox for at least one meaningful layout, such as navigation or the collection cards.
-    The site must remain usable when the browser is resized to a narrow width.
-    Interactive elements must have visible hover and focus styling.
+    -Use one shared external stylesheet rather than duplicating page-specific style blocks.
+    -Use CSS custom properties for a consistent color palette.
+    -Use the box model intentionally for spacing and card boundaries.
+    -Use Flexbox for at least one meaningful layout, such as navigation or the collection cards.
+    -The site must remain usable when the browser is resized to a narrow width.
+    -Interactive elements must have visible hover and focus styling.
 
 JavaScript Fundamentals I requirement
 
-    The project must link an external JavaScript file.
-    The file must contain meaningful project variables, a numeric calculation, a template literal, a boolean/comparison, and an if/else decision.
-    Open the browser console on the deployed site and confirm that the project summary runs without errors.
+    -The project must link an external JavaScript file.
+    -The file must contain meaningful project variables, a numeric calculation, a template literal, a boolean/comparison, and an if/else decision.
+    -Open the browser console on the deployed site and confirm that the project summary runs without errors.
 
 GitHub and Render requirements
 
     Use the VS Code Source Control view to commit all exam corrections and synchronize them to the existing GitHub repository.
-    Your repository must show a sequence of meaningful commits from the weekly checkpoints rather than one last-minute upload.
-    Update README.md with sections named Project Description, Current Features, Planned Data Model, and Live Site.
-    Under Live Site, place the Render frontend URL.
+    -Your repository must show a sequence of meaningful commits from the weekly checkpoints rather than one last-minute upload.
+    -Update README.md with sections named Project Description, Current Features, Planned Data Model, and Live Site.
+    -Under Live Site, place the Render frontend URL.
     Open Render and wait until the latest deployment is Live.
     Test the public Render URL in a private/incognito browser window to make sure the site does not depend on local files.
 
