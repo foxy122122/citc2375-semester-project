@@ -35,6 +35,10 @@ week 6: java script proto type;
 
 week 7: final touch ups for exam
 
+week 8: fall 
+
+week 9: added data.js which contains functions and objects used in app.js
+
 ## Project Description
 
 this is a collection of games for my semester project.
