@@ -39,6 +39,8 @@ week 8: fall
 
 week 9: added data.js which contains functions and objects used in app.js
 
+week 10: i used grid on the whole thing to see how it looks and i keeping that. the articles themself are now flex boxes but i dont see much change so might turn them back to normal.
+
 ## Project Description
 
 this is a collection of games for my semester project.

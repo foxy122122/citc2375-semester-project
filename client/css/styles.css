@@ -17,7 +17,16 @@
     line-height: 1.5;
     list-style-type: none;
 }
-
+.gamesArticles{
+    display: grid;
+    
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    /*style="display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;"*/
+}
 a:link,a:visited {
     color: var(--link-color);
 }
@@ -41,14 +50,16 @@ img {
     max-width: 100%;
     background-color: var(--sub-bg-color);
     height: auto;
-    width: 700px;
+    width: 97.5%;
 }
 .games {
     border: 1px solid var(--sub-border-color);
     padding: 5px;
     margin: 5px;
-    max-width: 720px;
-    /*height: 820px;*/
+    display: flex;
+    flex-direction: column;
+    /*max-width: 720px;
+    height: 820px;*/
 }/* wanted to make the flex boxes the same height but did not want the
 steam link to be floating above nothing
 i could not figure out how to make the steam link stay at the bottom
@@ -59,3 +70,11 @@ i could not figure out how to make the steam link stay at the bottom
     wana make a gradient but couldnt figure it out
 background: radial-gradient(square,rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 100%);
 }*/
+.games hr {
+    width: 100%;
+}
+
+
+
+
+/* can you fix the image going over the side on the right?*/

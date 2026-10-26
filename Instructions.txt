@@ -1,27 +1,22 @@
--Create client/js/data.js.
+-Identify the collection/list area of index.html. Keep all item cards inside one parent container.
 
--Define an array named items containing at least 6 objects.
+-Change that parent container to CSS Grid using display: grid.
 
--Every object must contain the same core fields: id, title/name, category/type, description, and at least one additional project-specific field.
+-Define columns with a flexible pattern such as repeat(auto-fit, minmax(...)) 
+ or another layout appropriate to your design.
 
--Use numeric IDs that are unique within the array.
+-Use gap to create consistent spacing between grid items.
 
--Create a function that receives an item ID and returns the matching object.
+-Use at least one additional Grid property intentionally, such as grid-column, align-items,
+ justify-items, or named grid areas.
 
--Create a function that receives a category/type and returns only matching items. Use an array method such as filter.
+-If your page contains a controls/filter region, consider arranging it with Grid while preserving
+ a logical source order.
 
--Create a function that calculates a meaningful summary using a loop or array method.
- Examples include average rating,
- total duration, average cost, number of favorites, or count by category.
+-Keep the layout usable at narrow and wide browser sizes. Resize the browser and correct overflow.
 
--Use JSON.stringify to create a JSON representation of the array and 
- JSON.parse to convert it back into JavaScript.
- Log one value from the parsed result to prove the round trip worked.
+-Apply one idea from this week's CSS-framework material: consistent spacing scale, reusable 
+ utility-like classes, or a reusable component pattern. You do not need to add Tailwind to
+ the semester project this week.
 
--Link data.js before app.js in index.html so app.js can use the data.
-
--Update app.js so its console output calls at least two of your new functions.
-
--Open the browser console and verify that no errors occur and your functions produce correct results.
-
--Update README.md with the finalized item fields.
+-In README.md, add 2–3 sentences explaining where you chose Grid instead of Flexbox and why.
