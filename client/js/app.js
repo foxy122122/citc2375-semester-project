@@ -77,7 +77,6 @@ function renderFilteredItems() {
 }
 renderFilteredItems();
 itemList.addEventListener('click', (event) => {
-    renderFilteredItems();
   const favoriteButton = event.target.closest('.favorite-toggle');
   if (!favoriteButton || !itemList.contains(favoriteButton)) return;
 
@@ -88,7 +87,7 @@ itemList.addEventListener('click', (event) => {
     favoriteItemIds.add(itemId);
   }
   localStorage.setItem(favoriteStorageKey, JSON.stringify([...favoriteItemIds]));
-  renderItems(items);
+    renderFilteredItems();
 });
 
 filterControl.addEventListener('change', (event) => {
