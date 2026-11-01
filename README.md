@@ -35,11 +35,13 @@ week 6: java script proto type;
 
 week 7: final touch ups for exam
 
-week 8: fall 
+week 8: fall
 
 week 9: added data.js which contains functions and objects used in app.js
 
 week 10: i used grid on the whole thing to see how it looks and i keeping that. the articles themself are now flex boxes but i dont see much change so might turn them back to normal.
+
+week 11: redid the articles system to be more modular. added filter and saving filter aswells as favorites and saving favorites
 
 ## Project Description
 

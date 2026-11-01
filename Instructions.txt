@@ -1,22 +1,30 @@
--Identify the collection/list area of index.html. Keep all item cards inside one parent container.
+-In index.html, remove the hard-coded sample item article elements.
+ Leave an empty container such as <div id="item-list"></div>.
 
--Change that parent container to CSS Grid using display: grid.
+-Add a filter control above the list. Use a select box or text input
+ appropriate to the project, and give it an accessible label.
 
--Define columns with a flexible pattern such as repeat(auto-fit, minmax(...)) 
- or another layout appropriate to your design.
+-In app.js, select the item-list container and filter control using DOM APIs.
 
--Use gap to create consistent spacing between grid items.
+-Create a renderItems(itemsToRender) function. It must clear the current list and
+ create one visible card/article for each object passed to the function.
 
--Use at least one additional Grid property intentionally, such as grid-column, align-items,
- justify-items, or named grid areas.
+-Call renderItems(items) when the page first loads.
 
--If your page contains a controls/filter region, consider arranging it with Grid while preserving
- a logical source order.
+-Add an event listener to the filter control. When the user changes/submits the filter,
+ call your array-filter function and rerender the matching items.
 
--Keep the layout usable at narrow and wide browser sizes. Resize the browser and correct overflow.
+-Add a favorite/bookmark control to each rendered item. Use an event listener so clicking
+ it changes the item's favorite state in the interface.
 
--Apply one idea from this week's CSS-framework material: consistent spacing scale, reusable 
- utility-like classes, or a reusable component pattern. You do not need to add Tailwind to
- the semester project this week.
+-Store the list of favorite item IDs in localStorage. When the page reloads,
+ read the stored IDs and restore the favorite indicators.
 
--In README.md, add 2–3 sentences explaining where you chose Grid instead of Flexbox and why.
+-Add a small preference to localStorage as well (for example, last selected category
+ or view mode) OR document in README.md
+ why favorites alone are the meaningful persistent preference for your project.
+
+-Test these cases: initial render; filter with results; filter with no results;
+ mark favorite; refresh page; favorite remains.
+
+Push the project and repeat the same tests on the Render URL, not only localhost.

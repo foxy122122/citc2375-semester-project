@@ -52,6 +52,9 @@ img {
     height: auto;
     width: 97.5%;
 }
+.favorite-toggle {
+    width: 87px;
+}
 .games {
     border: 1px solid var(--sub-border-color);
     padding: 5px;
