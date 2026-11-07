@@ -1,30 +1,266 @@
--In index.html, remove the hard-coded sample item article elements.
- Leave an empty container such as <div id="item-list"></div>.
 
--Add a filter control above the list. Use a select box or text input
- appropriate to the project, and give it an accessible label.
+Your main React files should include:
 
--In app.js, select the item-list container and filter control using DOM APIs.
+client/
+|-- public/
+|   |-- images/
+|   |-- about.html
+|   |-- add.html
+|
+|-- src/
+|   |-- components/
+|   |   |-- Header.jsx
+|   |   |-- ItemCard.jsx
+|   |   |-- ItemList.jsx
+|   |
+|   |-- App.jsx
+|   |-- App.css
+|   |-- data.js
+|   |-- main.jsx
+|
+|-- package.json
+|-- package-lock.json
 
--Create a renderItems(itemsToRender) function. It must clear the current list and
- create one visible card/article for each object passed to the function.
 
--Call renderItems(items) when the page first loads.
+Step 5: Create the ItemCard component
 
--Add an event listener to the filter control. When the user changes/submits the filter,
- call your array-filter function and rerender the matching items.
+Create ItemCard.jsx so it receives one item through props, displays its information, and includes the favorite control from Checkpoint 9.
 
--Add a favorite/bookmark control to each rendered item. Use an event listener so clicking
- it changes the item's favorite state in the interface.
+Example:
 
--Store the list of favorite item IDs in localStorage. When the page reloads,
- read the stored IDs and restore the favorite indicators.
+export default function ItemCard({
+    item,
+    isFavorite,
+    onToggleFavorite
+}) {
+    return (
+        <article>
+            <h2>{item.name}</h2>
+            <p>{item.description}</p>
 
--Add a small preference to localStorage as well (for example, last selected category
- or view mode) OR document in README.md
- why favorites alone are the meaningful persistent preference for your project.
+            <button
+                type="button"
+                aria-pressed={isFavorite}
+                onClick={() => onToggleFavorite(item.id)}
+            >
+                {isFavorite ? "★ Favorite" : "☆ Add to favorites"}
+            </button>
+        </article>
+    );
+}
 
--Test these cases: initial render; filter with results; filter with no results;
- mark favorite; refresh page; favorite remains.
+Adapt this component to display the actual properties from your item objects. Your favorite control must update when clicked.
+Step 6: Create the ItemList component
 
-Push the project and repeat the same tests on the Render URL, not only localhost.
+Create ItemList.jsx so it receives the items to display and uses map() to render an ItemCard for each item.
+
+Example:
+
+import ItemCard from './ItemCard.jsx';
+
+export default function ItemList({
+    items,
+    favoriteIds,
+    onToggleFavorite
+}) {
+    if (items.length === 0) {
+        return <p>No matching items were found.</p>;
+    }
+
+    return (
+        <section>
+            {items.map(item => (
+                <ItemCard
+                    key={item.id}
+                    item={item}
+                    isFavorite={favoriteIds.includes(item.id)}
+                    onToggleFavorite={onToggleFavorite}
+                />
+            ))}
+        </section>
+    );
+}
+
+Each item must use its unique ID as the React key. Preserve the no-results behavior from Checkpoint 9.
+Step 7: Assemble the application in App.jsx
+
+In App.jsx, import useState, your components, and your exported item array. Use React state to track the selected category and favorite item IDs.
+
+A simplified example is shown below:
+
+import { useState } from 'react';
+import Header from './components/Header.jsx';
+import ItemList from './components/ItemList.jsx';
+import { items } from './data.js';
+import './App.css';
+
+export default function App() {
+    const [selectedCategory, setSelectedCategory] =
+        useState(() => {
+            return localStorage.getItem(
+                'myProject.selectedCategory'
+            ) || 'All';
+        });
+
+    const [favoriteIds, setFavoriteIds] =
+        useState(() => {
+            const saved = localStorage.getItem(
+                'myProject.favoriteIds'
+            );
+
+            return saved ? JSON.parse(saved) : [];
+        });
+
+    function handleCategoryChange(event) {
+        const category = event.target.value;
+
+        setSelectedCategory(category);
+        localStorage.setItem(
+            'myProject.selectedCategory',
+            category
+        );
+    }
+
+    function handleToggleFavorite(itemId) {
+        const updated = favoriteIds.includes(itemId)
+            ? favoriteIds.filter(id => id !== itemId)
+            : [...favoriteIds, itemId];
+
+        setFavoriteIds(updated);
+
+        localStorage.setItem(
+            'myProject.favoriteIds',
+            JSON.stringify(updated)
+        );
+    }
+
+    const filteredItems =
+        selectedCategory === 'All'
+            ? items
+            : items.filter(
+                item => item.category === selectedCategory
+            );
+
+    return (
+        <>
+            <Header />
+
+            <main>
+                <label htmlFor="category-filter">
+                    Category
+                </label>
+
+                <select
+                    id="category-filter"
+                    value={selectedCategory}
+                    onChange={handleCategoryChange}
+                >
+                    <option value="All">
+                        All categories
+                    </option>
+                </select>
+
+                <ItemList
+                    items={filteredItems}
+                    favoriteIds={favoriteIds}
+                    onToggleFavorite={handleToggleFavorite}
+                />
+            </main>
+        </>
+    );
+}
+
+This is only an example. Use your own categories, storage keys, item properties, and markup.
+
+Use the same localStorage keys from Checkpoint 9 when possible so previously saved preferences continue to work.
+
+You do not need useEffect or React Router for this checkpoint.
+Imports
+
+Import paths are relative to the file containing the import.
+
+import { useState } from 'react';
+import { items } from './data.js';
+import ItemCard from './ItemCard.jsx';
+
+Do not import anything from client-static.
+Step 8: Test the React application
+
+From the client folder, run:
+
+npm run dev
+
+Verify that:
+
+    your title, navigation, styling, and images appear;
+    at least six items render through React components;
+    existing non-home pages still open;
+    category filtering works;
+    a no-results message appears when appropriate;
+    favorite controls toggle correctly;
+    favorite choices remain after a refresh; and
+    the selected category remains after a refresh.
+
+Check the browser console and VS Code terminal for errors.
+
+Stop the development server and create a production build:
+
+npm run build
+
+The build must complete successfully. If you preserved static pages in public, confirm that they also appear in client/dist.
+
+Do not commit node_modules or dist.
+Part 3: Commit and deploy
+Step 1: Commit the checkpoint
+
+    Choose File > Save All.
+    Open Source Control and review your changes.
+    Make sure you are not committing node_modules, dist, secrets, or unrelated files.
+    Stage all checkpoint files.
+
+    Use this commit message exactly:
+
+    Project checkpoint 10: React migration
+
+    Commit the changes, but do not Sync Changes yet.
+
+Step 2: Update Render
+
+Open your existing Render Static Site. Do not create a new service.
+Required Render build settings Setting 	Value
+Root Directory 	client
+Build Command 	npm ci && npm run build
+Publish Directory 	dist
+
+Save the settings.
+Step 3: Push and verify
+
+    Return to VS Code and click Sync Changes.
+    Verify the new commit appears on GitHub.
+    Watch the automatic Render deployment.
+    Wait until the deployment shows Live.
+    Open the public site and repeat your navigation, filtering, favorite, persistence, and page-refresh tests.
+
+If deployment fails, correct the problem locally, run npm run build again, commit the fix, sync to GitHub, and verify the new Render deployment.
+Submission
+
+    Open the successfully deployed commit on GitHub and copy its short commit ID.
+
+    Create checkpoint-10.txt outside the GitHub repository with:
+
+    Name: YOUR NAME
+    Project title: YOUR PROJECT TITLE
+    GitHub repository: https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    Live frontend: https://YOUR-SITE.onrender.com
+    Commit: SHORT-COMMIT-ID
+    Checkpoint notes: One or two sentences describing what you changed this week.
+
+    Verify that the commit ID matches the version deployed on Render.
+    Upload checkpoint-10.txt to this Brightspace assignment.
+
+Grading (10 points)
+
+    6 points: React migration requirements are complete and working, including components, props, map(), state, filtering, favorites, persistence, existing navigation/pages, and a successful production build.
+    2 points: The checkpoint is committed and pushed to GitHub.
+    1 point: The Render deployment is live and matches the submitted commit.
+    1 point: The Brightspace submission contains working links and the correct commit ID.

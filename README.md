@@ -43,6 +43,8 @@ week 10: i used grid on the whole thing to see how it looks and i keeping that. 
 
 week 11: redid the articles system to be more modular. added filter and saving filter aswells as favorites and saving favorites
 
+week 12: react, had to change a ton behind the scense but looks almost the same to everyone else
+
 ## Project Description
 
 this is a collection of games for my semester project.

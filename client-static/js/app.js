@@ -3,7 +3,7 @@ const finished = false;
 console.log(`Welcome to my ${title}.`);
 console.log(`this is my ${title}. in it theres cool games.`);
 if (finished) {
-  // confetti effect that may or may not even happen
+  // confetti effect that may or may not ever happen
 } else {
   console.log("I have not finished my collection yet.");
 }
@@ -21,6 +21,7 @@ try {
 } catch (error) {
   // Keep the default filter when storage is unavailable.
 }
+
 const favoriteStorageKey = 'favoriteItemIds';
 let favoriteItemIds = new Set();
 try {
@@ -31,6 +32,10 @@ try {
 } catch (error) {
   favoriteItemIds = new Set();
 }
+
+
+
+
 
 function renderItems(items) {
   itemList.innerHTML = '';
